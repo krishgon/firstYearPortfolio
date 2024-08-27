@@ -3,13 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!-- Linking google fonts for icons -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Krish Agrawal Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+            }
+        </style>
+        <!-- linking swiper for mobile touch controls -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     </head>
 
     <body>
-        
+        <header class="header">
+            <a href="#" class="logo">Krish</a>
+
+            <nav class="navbar">
+                <a href="#" class="active">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1 class="namaste">Namaste,</h1> 
+                <h1 class="nameBox">I'm <span style="color: black;">Krish Agrawal</span></h1>
+                <h3>Full stack developer</h3>
+                <p>
+                I am a first year undergraduate student at IIT KGP pursuing the course of electronics and instrumentation engineering. I have been exploring the domains of coding from a very young age and have experience in a lot of them. Apart from this, I am a social person who loves to solve the problems around him.             
+                </p>
+            </div>
+            <div class="krishPic">
+                <img src="assets/krishFilpped.jpg" alt="Krish Agrawal" loading="lazy" width="100%">
+            </div>
+        </section>
+        <section class="portfolio">
+            <h1>My Portfolio:-</h1>
+            <div class="portCarousel swiper">
+                <div class="cardWrapper">
+                    <ul class="cardList swiper-wrapper">
+                        <li class="cardItem swiper-slide">
+                            <a href="#" class="cardLink">
+                                <img src="assets/webDev.jpeg" class="cardImage">
+                                 <h2 class="cardTitle">Web Development</h2> 
+                                <button class="cardButton material-symbols-outlined">arrow_forward</button>
+                            </a>
+
+                        </li>
+                        <li class="cardItem swiper-slide">
+                            <a href="#" class="cardLink">
+                                <img src="assets/webDev.jpeg" class="cardImage">
+                                <h2 class="cardTitle">Web Development 2</h2> 
+                                <button class="cardButton material-symbols-outlined">arrow_forward</button>
+                            </a>
+
+                        </li>
+                        <li class="cardItem swiper-slide">
+                            <a href="#" class="cardLink">
+                                <img src="assets/webDev.jpeg" class="cardImage">
+                                <h2 class="cardTitle">Web Development 3</h2> 
+                                <button class="cardButton material-symbols-outlined">arrow_forward</button>
+                            </a>
+
+                        </li>
+                        <li class="cardItem swiper-slide">
+                            <a href="#" class="cardLink">
+                                <img src="assets/webDev.jpeg" class="cardImage">
+                                <h2 class="cardTitle">Web Development 4</h2> 
+                                <button class="cardButton material-symbols-outlined">arrow_forward</button>
+                            </a>
+
+                        </li>
+                        <li class="cardItem swiper-slide">
+                            <a href="#" class="cardLink">
+                                <img src="assets/webDev.jpeg" class="cardImage">
+                                <h2 class="cardTitle">Web Development 5</h2> 
+                                <button class="cardButton material-symbols-outlined">arrow_forward</button>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    
     </body>
 
 </html>
