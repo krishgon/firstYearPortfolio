@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Krish Agrawal Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .material-symbols-outlined {
               font-variation-settings:
@@ -27,14 +28,14 @@
             <a href="#" class="logo">Krish</a>
 
             <nav class="navbar">
-                <a href="#" class="active">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
 
-        <section class="home">
+        <section class="home" id="about">
             <div class="home-content">
                 <h1 class="namaste">Namaste,</h1> 
                 <h1 class="nameBox">I'm <span style="color: black;">Krish Agrawal</span></h1>
@@ -47,47 +48,62 @@
                 <img src="assets/krishFilpped.jpg" alt="Krish Agrawal" loading="lazy" width="100%">
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h1>My Portfolio:-</h1>
             <div class="portCarousel swiper">
                 <div class="cardWrapper">
                     <ul class="cardList swiper-wrapper">
                         <li class="cardItem swiper-slide">
-                            <a href="#" class="cardLink">
+                            <a href="https://github.com/krishgon/Web_development" class="cardLink" target="_blank">
                                 <img src="assets/webDev.jpeg" class="cardImage">
-                                 <h2 class="cardTitle">Web Development</h2> 
+                                <h2 class="cardTitle">Web Development</h2> 
+                                <p class="cardText">
+                                    This is the domain in which I have worked the most. I have made a bunch of project only using HTML, CSS and JS. Linking them below in the projects section!
+                                </p>
                                 <button class="cardButton material-symbols-outlined">arrow_forward</button>
                             </a>
 
                         </li>
                         <li class="cardItem swiper-slide">
-                            <a href="#" class="cardLink">
-                                <img src="assets/webDev.jpeg" class="cardImage">
-                                <h2 class="cardTitle">Web Development 2</h2> 
+                            <a href="https://github.com/krishgon/python" class="cardLink" target="_blank">
+                                <img src="assets/Python_snake_c7d86ba58b.jpg" class="cardImage">
+                                <h2 class="cardTitle">Python</h2> 
+                                <p class="cardText">
+                                    The sheer power of python and the libraries provided by it's community have always fascinated me. I have made a few interesting programs using the same. 
+                                </p>
                                 <button class="cardButton material-symbols-outlined">arrow_forward</button>
                             </a>
 
                         </li>
                         <li class="cardItem swiper-slide">
-                            <a href="#" class="cardLink">
-                                <img src="assets/webDev.jpeg" class="cardImage">
-                                <h2 class="cardTitle">Web Development 3</h2> 
+                            <a href="https://github.com/krishgon/C" class="cardLink" target="_blank">
+                                <img src="assets/CPP-Language.png" class="cardImage">
+                                <h2 class="cardTitle">C and C++</h2> 
+                                <p class="cardText">
+                                    The very first language which I worked with in my 6th grade was C. Currently, I am pursuing the course 'CS50' offered by harvard university to fill in any gaps.
+                                </p>
                                 <button class="cardButton material-symbols-outlined">arrow_forward</button>
                             </a>
 
                         </li>
                         <li class="cardItem swiper-slide">
-                            <a href="#" class="cardLink">
-                                <img src="assets/webDev.jpeg" class="cardImage">
-                                <h2 class="cardTitle">Web Development 4</h2> 
+                            <a href="https://github.com/krishgon/java" class="cardLink" target="_blank">
+                                <img src="assets/appDev.jpg" class="cardImage">
+                                <h2 class="cardTitle">App development(using Java)</h2> 
+                                <p class="cardText">
+                                    In order to create my dream app(in projects section), I learnt android app development using Java. Along the way, I made some basic apps.
+                                </p>
                                 <button class="cardButton material-symbols-outlined">arrow_forward</button>
                             </a>
 
                         </li>
                         <li class="cardItem swiper-slide">
-                            <a href="#" class="cardLink">
-                                <img src="assets/webDev.jpeg" class="cardImage">
-                                <h2 class="cardTitle">Web Development 5</h2> 
+                            <a href="https://github.com/krishgon/Robotics" class="cardLink" target="_blank">
+                                <img src="assets/robotics.jpg" class="cardImage">
+                                <h2 class="cardTitle">Robotics</h2> 
+                                <p class="cardText">
+                                    I once took a basic course in robotics. At end of our course we made a dustbin which would automatically open on putting garbage in front of it.
+                                </p>
                                 <button class="cardButton material-symbols-outlined">arrow_forward</button>
                             </a>
                         </li>
@@ -99,9 +115,129 @@
                 </div>
             </div>
         </section>
+
+        <section class="projects" id="projects">
+            <h1>My Projects:-</h1>
+            <div class="boxContainer">
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/studify.jpg">    
+                    </div>
+                    <h5>Studify</h5>
+                    <p>This is a chrome extension published on the chrome web store. 
+                        It helps students focus by eliminating all kinds of distraction on youtube. 
+                        Until now, this extension has managed to gain 200+ users without any marketing. I was involved in 
+                        JEE prep immediately after I published the extension and hence could not optimize it more. I used HTML, CSS and JS to build 
+                        it and hence faced a lot of challenges.
+                        
+                        <br><br><b>This extension got the 'featured' tag from chrome web store and also got a 5-star rating.</b>
+                    </p>
+                    <button onclick="openInNewTab('https://chromewebstore.google.com/detail/studify-wipe-off-distract/dflpmjlfiihkkcdnapemddoedoegcgoi')">View in Chrome Web Store</button>
+                
+                </div>
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/medFiles.png">    
+                    </div>
+                    <h5>Medfiles</h5>
+                    <p>Medfiles is a fully-functioning HealthTech solution that is designed for hospitals and clinics. It is a unified interface to access all your medical documents, recieve medical prescriptions, and also to gain analytics based on your uploaded records. It also eliminates the need for a custom software for each hospital. We used vanilla html, css, js for frontend and google firebase for backend. <br><br><b>This project won a whooping 50,000 Rupees at the HPE code wars hackathon 2022.</b> </p>
+                    <button onclick="openInNewTab('https://github.com/krishgon/HPE_hackathon/')">View on Github</button>
+                
+                </div>
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/tachi.png">    
+                    </div>
+                    <h5>Tachi</h5>
+                    <p>This is probably the most beautiful website that I have worked on until now. Tachi is a hypothetical 5-star hotel chain that runs around the world. 
+                        Again, upholding the legacy it was made completely from vanilla HTML, CSS and JS and was fully responsive.
+                         Me along with my single teammate had to do a lot of brainstorming and hustling to create the website well within the time limit. 
+                         I still recollect those days when we would simply not compromise the glory of this website. 
+                        <br><br><b>This website won the 3rd prize at IIT bombay's techfest competition.</b>
+                    </p>
+                    <button onclick="openInNewTab('https://krishgon.github.io/Tachi/')">Open Website(MUST SEE!!)</button>
+                
+                </div>
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/kalakar.png">    
+                    </div>
+                    <h5>Kalakar</h5>
+                    <p>
+                        Kalakar was a full-fledged startup idea. It was basically a marketplace for teenagers to earn from their skills at their age. 
+                        In simple terms, it was an apprenticeship platform but it emphasized on earning experience more than earning money. 
+                        I did the whole process of creating a large scale application, all by myself.
+                        I created a full UI and backend flowchart before starting to build it. I also created two different apps, one for the customers and one for the skilled teenagers.
+                        I used java, gradle, google firebase to execute this idea. However I had to give up on it due to my school exams.
+                    </p>
+                    <button onclick="openInNewTab('https://github.com/krishgon/FullKalakar')">View on Github</button>
+                
+                </div>
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/osda.png">    
+                    </div>
+                    <h5>OSDA</h5>
+                    <p>
+                        OSDA stands for 'Odisha Skill Development Authority'. 
+                        I made this project only for practice purposes when I was learning Web Development.
+                        It exhibits all the basic stuff that a website has like a carousel for gallery, contact us form, navbar, footer etc.
+                        It's deployed on github so you can check it out by clicking the button below.  
+                    </p>
+                    <button onclick="openInNewTab('https://krishgon.github.io/Web_development/primary_files/OSDA/')">Open Website</button>
+                
+                </div>
+                <div class="projectBox">
+                    <div class="projectImage">
+                        <img src="assets/housie.png">    
+                    </div>
+                    <h5>Housie Ticket Generator</h5>
+                    <p>
+                        No one can forget the bad old covid days when all the families were busy in playing different types of housie.
+                        In reply to this trend, we made a ticket generator which can generate themed housie tickets. We used basic HTML, CSS and JS to build it. It's open for anyone to contribute via github.
+
+                    </p>
+                    <button onclick="openInNewTab('https://krishgon.github.io/HousieTicketGenerator/')">Open Website</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contactForm">
+                <h1>Get in touch</h1>
+                <p>Phone number: +91 9326811779 <br> Email: krishgondia@gmail.com</p>
+                <form action="">
+                    <input type="" placeholder="Your Name" required>
+                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="" value="Submit" class="btn">
+                </form>
+            </div>
+
+            <div class="contactImage">
+                <img src="assets/contact.jpg">
+            </div>
+
+        </section>
+
+        <section class="footer">
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/krishag64/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/REALkrishgon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@KrishAgrawal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://discord.com/users/439766085764513792" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by Krish Agrawal without any copying from vanilla html, css and js.</p>
+            </div>
+
+        </section>
+
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
-    
     </body>
 
 </html>

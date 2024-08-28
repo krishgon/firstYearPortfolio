@@ -6,6 +6,8 @@ new Swiper('.cardWrapper', {
     // Pagination bullets
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
     },
 
     // Navigation arrows
@@ -22,8 +24,15 @@ new Swiper('.cardWrapper', {
             slidesPerView: 2
         },
         1024: {
-            slidesPerView: 3 
+            slidesPerView: 3
         }
     }
 
 });
+
+
+function openInNewTab(url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+

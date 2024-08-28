@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -154,13 +162,13 @@ body {
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid transparent;
+    border: 1.5px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
 }
 
 .cardList .cardItem .cardLink:hover {
-    border-color: blue;
+    border-color: #917D00;
 }
 
 .cardList .cardLink .cardImage {
@@ -173,23 +181,251 @@ body {
 .cardList .cardLink .cardButton {
     height: 35px;
     width: 35px;
-    color: blue;
+    color: #917D00;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid blue;
+    border: 2px solid #917D00;
     transform: rotate(-45deg);
     transition: 0.3s ease;
 }
 
-.cardList .cardLink:hover .cardButton {
-    color: white;
-    background: blue;
+.cardList .cardLink .cardText {
+    color: black;
+    margin-top: 20px;
 }
 
-.cardWrapper, .portCarousel {
+
+.cardList .cardLink:hover .cardButton {
+    color: white;
+    background: #917D00;
+}
+.portCarousel{
     width: 100%;
+}
+
+.cardWrapper{
+    max-width: 1100px;
+    margin: 35px 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.cardWrapper .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+    opacity: 0.5;
+    background: #C3A900;
+}
+
+.cardWrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #917D00;
+}
+
+.cardWrapper .swiper-button-next,.cardWrapper .swiper-button-prev {
+    color: #917D00;    
+    margin-top: -35px;
+}
+
+.cardTitle {
+    margin-top: 10px;
+    color: #917D00;
+    font-weight: 500;
+}
+
+.projects {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.projects h1 {
+    /* display: flex;
+    justify-content: center;
+    width: 100%; */
+    height: fit-content;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.boxContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: 400px;
+}
+
+.projectBox {
+    background: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.projectBox h5 {
+    color: #917D00;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projectImage img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.projectBox p {
+    margin-top: 10px;
+}
+
+.projectBox button {
+    width: 100%;
+    margin-top: 25px;
+    color: #917D00;
+    background: white;
+    border: 2px solid #917D00;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.projectBox button:hover {
+    color: white;
+    background: #917D00;
+}
+
+.contact {
+    margin: 5% 10%;
+    background: white;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.contactForm{
+    padding: 20px 50px;
+}
+
+.contactImage {
+    background: #1B2F47;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contactImage img{
+    max-width: 100%;
+    width: 720px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+.contactForm h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+
+
+}
+
+.contactForm form {
+    position: relative;
+    margin-top: 20px;
+}
+
+.contactForm form input, form textarea {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background-color: #eaeaea;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contactForm .btn {
+    display: inline-block;
+    background: #917D00;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.contactForm .btn:hover {
+    background-color: #C3A900;
+}
+
+.footer{
+    background: #917D00;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #917D00;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #917D00;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s ease;
+}
+
+
+.footerBottom p {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: #605405;
 }
 
 /* keyframe animation */
@@ -199,3 +435,23 @@ body {
     }
 }
 
+
+@media (max-width: 1000px) {
+    .contact {
+        margin: 5% 1%;   
+        transition: 0.2s;
+        grid-gap: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .home{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 712px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
