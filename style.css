@@ -447,6 +447,8 @@ form textarea {
 @media (max-width: 900px) {
     .home{
         flex-direction: column;
+        height: auto;
+        margin-top: 15vh;
     }
 }
 
